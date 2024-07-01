@@ -81,6 +81,11 @@
             cursor: pointer;
             margin: 0 10px;
         }
+
+        .dropdown-toggle::after {
+    display: none;
+}
+
     </style>
 </head>
 <body>
@@ -90,12 +95,14 @@
             <a class="navbar-brand" href="#!">
                 <img src="logo.png" alt="Company Logo" width="auto" height="30">
             </a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">    
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop  <i class="fas fa-bars"></i>
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">All Products</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#!">Popular Items</a></li>
